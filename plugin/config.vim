@@ -64,6 +64,9 @@ set statusline+=%h%m%r%w " flag
 set statusline+=%= " right align
 set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 
+" Disable line wrapping
+set nowrap
+
 " Enable line numbers
 set number
 setlocal numberwidth=5
@@ -111,14 +114,14 @@ set smartindent
 
 " Tab widths
 set tabstop=2
+set shiftwidth=2
 set softtabstop=2
-set laststatus=1
 
 " Expand tabs to spaces
 set expandtab
 
 " Filetype-specific indenting and plugins
-filetype plugin indent on
+"filetype plugin indent on
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
