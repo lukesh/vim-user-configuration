@@ -50,13 +50,14 @@ let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'
 
 " Highlight long lines
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%80v.\+/
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%80v.\+/
 
 " Nice statusbar
 set laststatus=2
 set statusline=\ "
 set statusline+=%f\ " filename
+set statusline+=%{fugitive#statusline()}\ "
 set statusline+=[
 set statusline+=%{strlen(&ft)?&ft:'none'}, " filetype
 set statusline+=%{&fileformat}] " file format
@@ -150,6 +151,13 @@ let g:CommandTMinHeight=4
 let g:ackprg = 'ag --nogroup --nocolor --column'
 map <C-t> :CommandTFlush<cr>\|:CommandT<cr>
 
+" IndentGuides
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=235
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 2
+"autocmd VimEnter * IndentGuidesToggle
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
@@ -157,5 +165,6 @@ map <C-t> :CommandTFlush<cr>\|:CommandT<cr>
 " j/k make a lot more sense this way when lines are wrapped 
 nmap j gj
 nmap k gk
+nmap <leader><space> :noh<CR>
+nmap <leader>1234 :e ~/.vim/bundle/vim-user-configuration/plugin/config.vim<CR>
 map \3 :b#<CR>
-
