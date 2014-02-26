@@ -6,6 +6,7 @@ set enc=UTF-8
 set fenc=UTF-8
 set termencoding=UTF-8
 set foldmethod=syntax
+set foldlevel=99
 
 " store undo history
 set undodir^=~/.vim/tmp/undo//
@@ -26,6 +27,10 @@ set hidden
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Make backspace work
+set backspace=2
+
 " Theme
 colorscheme lucius
 LuciusDark
@@ -36,6 +41,7 @@ let g:netrw_liststyle=3
 " Syntax highlighting
 set nocompatible
 syntax on
+filetype plugin on
 
 " Highlight the current cursor line
 set cursorline
@@ -145,6 +151,7 @@ noremap <leader>sH :GitGutterNextHunk<CR>
 
 " NERDTree
 map <C-y> :NERDTree<CR>
+let NERDTreeShowHidden=1
 
 " Command-T
 let g:CommandTMaxHeight=20
@@ -160,9 +167,14 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 2
 "autocmd VimEnter * IndentGuidesToggle
 
+" CoffeeScript
+let coffee_compiler = '/usr/local/bin/coffee'
+let coffee_watch_vert = 1
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " j/k make a lot more sense this way when lines are wrapped 
 nmap j gj
 nmap k gk
