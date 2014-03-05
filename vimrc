@@ -17,6 +17,10 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
+if (v:version == 703 && has('patch584')) || v:version >= 704
+  NeoBundle 'Valloric/YouCompleteMe'
+endif
+
 " Color schemes
 "NeoBundle 'sjl/badwolf'
 "NeoBundle 'altercation/vim-colors-solarized'
@@ -33,23 +37,21 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-eunuch'
+NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'tpope/vim-surround'
 
 " Git stuff
 "NeoBundle 'tpope/vim-rhubarb'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-fugitive'
 
-"if (v:version == 703 && has('patch584')) || v:version >= 704
-"  NeoBundle 'Valloric/YouCompleteMe'
-"endif
-
 " Later
 "NeoBundle 'terryma/vim-multiple-cursors'
 "NeoBundle 'tpope/vim-tbone'
 "NeoBundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 "NeoBundle 'vim-scripts/L9'
-"NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'monokrome/vim-flow'
 "NeoBundle 'monokrome/openssl.vim'
 "NeoBundle 'moll/vim-node'
@@ -73,7 +75,6 @@ NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'tpope/vim-markdown'
 "NeoBundle 'tpope/vim-sensible'
 "NeoBundle 'tpope/vim-sleuth'
-"NeoBundle 'tpope/vim-surround'
 "NeoBundle 'tsukkee/unite-tag.git'
 "NeoBundle 'vim-ruby/vim-ruby'
 "NeoBundle 'vim-scripts/django.vim'

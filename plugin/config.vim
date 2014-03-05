@@ -23,6 +23,8 @@ set backupcopy=yes
 " to new ones.
 set hidden
 
+set wildignore+=**/node_modules/**
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI configuration
@@ -143,7 +145,7 @@ let g:gundo_close_on_revert = 1
 nnoremap <F5> :GundoToggle<CR>
 
 " Vim gitgutter
-let g:gitgutter_enabled = 0
+let g:gitgutter_enabled = 1
 noremap <leader>sg :GitGutterToggle<CR>
 noremap <leader>sG :GitGutterLineHighlightsToggle<CR>
 noremap <leader>sh :GitGutterNextHunk<CR>
@@ -176,6 +178,7 @@ let coffee_watch_vert = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " j/k make a lot more sense this way when lines are wrapped 
+nmap <leader>cd :lcd %:p:h<CR>
 nmap j gj
 nmap k gk
 nmap <leader><space> :noh<CR>
