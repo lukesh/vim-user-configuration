@@ -40,6 +40,7 @@ NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tpope/vim-commentary'
 "NeoBundle 'tpope/vim-surround'
 
 " Git stuff
@@ -88,5 +89,5 @@ NeoBundle 'jelera/vim-javascript-syntax', {
   \   ]
   \ }}
 
-silent NeoBundleClean!
+" silent NeoBundleClean!
 NeoBundleCheck
