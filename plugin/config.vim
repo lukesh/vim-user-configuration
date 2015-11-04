@@ -61,16 +61,16 @@ let g:session_autosave = 'yes'
 "match OverLength /\%80v.\+/
 
 " Nice statusbar
-set laststatus=2
-set statusline=\ "
-set statusline+=%f\ " filename
-set statusline+=%{fugitive#statusline()}\ "
-set statusline+=[
-set statusline+=%{strlen(&ft)?&ft:'none'}, " filetype
-set statusline+=%{&fileformat}] " file format
-set statusline+=%h%m%r%w " flag
-set statusline+=%= " right align
-set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
+" set laststatus=2
+" set statusline=\ "
+" set statusline+=%f\ " filename
+" set statusline+=%{fugitive#statusline()}\ "
+" set statusline+=[
+" set statusline+=%{strlen(&ft)?&ft:'none'}, " filetype
+" set statusline+=%{&fileformat}] " file format
+" set statusline+=%h%m%r%w " flag
+" set statusline+=%= " right align
+" set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 
 " Disable line wrapping
 set nowrap
@@ -105,13 +105,6 @@ set ruler
 set wildmode=longest:full
 set wildmenu
 
-" Enable mouse
-if has("mouse")
-  "set mouse=a
-  "set mousemodel=popup_setpos
-endif
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation and formatting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -130,7 +123,6 @@ set expandtab
 
 " Filetype-specific indenting and plugins
 "filetype plugin indent on
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin configuration and mappings

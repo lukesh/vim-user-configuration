@@ -11,9 +11,6 @@ augroup END
 set nocompatible
 set t_Co=256
 
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
-
 if has('vim_starting')
   if &compatible
     set nocompatible               " Be iMproved
@@ -33,9 +30,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-if (v:version == 703 && has('patch584')) || v:version >= 704
-  NeoBundle 'Valloric/YouCompleteMe'
-endif
 
 " Color schemes
 NeoBundle 'jonathanfilip/vim-lucius'
@@ -57,8 +51,8 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-commentary'
 
 " Git stuff
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-fugitive'
+" NeoBundle 'tpope/vim-git'
+" NeoBundle 'tpope/vim-fugitive'
 
 NeoBundle 'jelera/vim-javascript-syntax', {
   \ 'autoload':{
