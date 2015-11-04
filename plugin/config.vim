@@ -11,7 +11,6 @@ set foldlevel=99
 " store undo history
 set undodir^=~/.vim/tmp/undo//
 set undofile
-
 set backup 
 set backupdir=~/.vim/tmp/backup,~/.tmp/backup,~/tmp/backup,/var/tmp/backup,/tmp 
 set backupskip=/tmp/*,/private/tmp/* 
@@ -108,8 +107,8 @@ set wildmenu
 
 " Enable mouse
 if has("mouse")
-  set mouse=a
-  set mousemodel=popup_setpos
+  "set mouse=a
+  "set mousemodel=popup_setpos
 endif
 
 
@@ -179,8 +178,6 @@ let coffee_watch_vert = 1
 
 " j/k make a lot more sense this way when lines are wrapped 
 nmap <leader>cd :lcd %:p:h<CR>
-nmap j gj
-nmap k gk
 nmap <leader><space> :noh<CR>
 nmap <leader>1234 :e ~/.vim/bundle/vim-user-configuration/plugin/config.vim<CR>
 map \3 :b#<CR>

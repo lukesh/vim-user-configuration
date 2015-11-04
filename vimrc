@@ -22,8 +22,6 @@ if (v:version == 703 && has('patch584')) || v:version >= 704
 endif
 
 " Color schemes
-"NeoBundle 'sjl/badwolf'
-"NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'lunaru/vim-less'
 
@@ -41,46 +39,10 @@ NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-commentary'
-"NeoBundle 'tpope/vim-surround'
 
 " Git stuff
-"NeoBundle 'tpope/vim-rhubarb'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-fugitive'
-
-" Later
-"NeoBundle 'terryma/vim-multiple-cursors'
-"NeoBundle 'tpope/vim-tbone'
-"NeoBundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
-"NeoBundle 'vim-scripts/L9'
-"NeoBundle 'monokrome/vim-flow'
-"NeoBundle 'monokrome/openssl.vim'
-"NeoBundle 'moll/vim-node'
-"NeoBundle 'michaeljsmith/vim-indent-object'
-"NeoBundle 'mattn/webapi-vim'
-"NeoBundle 'johnsyweb/vim-makeshift.git'
-"NeoBundle 'kana/vim-exjumplist'
-"NeoBundle 'drmingdrmer/xptemplate'
-"NeoBundle 'Lokaltog/vim-easymotion'
-
-"NeoBundle 'Shougo/unite.vim'
-"NeoBundle 'Shougo/vimfiler.vim'
-"NeoBundle 'Shougo/vimproc.vim'
-"NeoBundle 'chrisbra/csv.vim'
-"NeoBundle 'digitaltoad/vim-jade'
-"NeoBundle 'gregsexton/MatchTag'
-"NeoBundle 'Shougo/unite-outline'
-"NeoBundle 'https://github.com/pangloss/vim-javascript'
-"NeoBundle 'itchyny/lightline.vim'
-"NeoBundle 'majutsushi/tagbar'
-"NeoBundle 'tpope/vim-markdown'
-"NeoBundle 'tpope/vim-sensible'
-"NeoBundle 'tpope/vim-sleuth'
-"NeoBundle 'tsukkee/unite-tag.git'
-"NeoBundle 'vim-ruby/vim-ruby'
-"NeoBundle 'vim-scripts/django.vim'
-"NeoBundle 'voithos/vim-python-matchit'
-"NeoBundle 'wavded/vim-stylus'
 
 NeoBundle 'jelera/vim-javascript-syntax', {
   \ 'autoload':{
